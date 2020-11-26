@@ -1,0 +1,43 @@
+.draws {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 15px auto;
+        padding: 0 20px;
+        max-width: 1040px;
+    }
+
+    &-single {
+        width: calc(50% - 42px);
+        height: 100px;
+        padding: 15px;
+        margin: 8px 0 8px;
+        border: 2px solid #80808029;
+        border-radius: 10px;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        .number {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 5px;
+            color: white;
+            font-style: bold;
+        }
+
+        .date {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-single {
+            width: 100%;
+        }
+    }
+}
